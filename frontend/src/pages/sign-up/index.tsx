@@ -1,5 +1,4 @@
 import {
-  ArrowLeft,
   EnvelopeSimple,
   LockSimple,
   User,
@@ -7,7 +6,6 @@ import {
 } from "@phosphor-icons/react";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
@@ -57,6 +55,7 @@ export default function SignUp() {
               alt="Logo"
               height={134}
               width={230.03}
+              quality={100}
             />
             <h1 className={styles.title}>Faça seu cadastro</h1>
             <form className={styles.form} onSubmit={handleSubmit(handleSignUp)}>
@@ -98,12 +97,12 @@ export default function SignUp() {
                 />
               </div>
             </form>
-            <Link href="/login">
+            {/* <Link href="/login">
               <p className={styles.paragraph}>
                 <ArrowLeft className={styles.iconArrowLeft} size={18} /> Voltar
                 para login
               </p>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

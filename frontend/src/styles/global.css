@@ -8,27 +8,34 @@
 }
 
 :root {
-  --primary:rgb(49, 46, 56);
-  --secondary:rgb(35, 33, 41);
+  /* Keeping the original colors you provided where applicable */
+  --primary: #312e38;
+  --secondary: #232129;
 
-  --text :#fff;
-  --text-secondary :  rgb(49, 46, 56);
-  --text-hover : rgb(201, 194, 194);
+  --text: #fff; /* As you mentioned, Faculdade Impacta uses white for text */
+  --text-secondary: #312e38;
+  --text-hover: #c9c2c2;
 
-  --link :rgb(248, 137, 11);
-  --link-hover :rgb(202, 120, 25);
+  /* Updating the link colors based on the button color you mentioned */
+  --link: #116fff;
+  --link-hover: #0a4dcc; /* A slightly darker shade of blue for hover */
 
-  --button: rgb(255, 144, 0);
-  --button-hover: rgb(204, 120, 10);
+  /* Updating the button colors based on what you provided */
+  --button: #116fff;
+  --button-hover: #0a4dcc; /* A slightly darker shade of blue for hover */
 
-  --sidebar: rgb(77, 74, 83);
+  /* Navbar color */
+  --sidebar: #101010;
 
-  --border-input : rgb(35, 33, 25);
+  --border-input: #232129;
 
-  --error: rgb(197, 48, 48);
+  --error: #c53030;
 
-  --icon: rgb(102, 99, 96);
+  /* You might want to adjust this icon color to be more in line with the new theme */
+  --icon: #666360;
 }
+
+
 
 
 body {
