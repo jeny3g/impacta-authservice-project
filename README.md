@@ -5,7 +5,6 @@ Um projeto de autenticação integrando Next.js (Frontend) e .NET (Backend).
 ### Estrutura do Repositório:
 
 ```bash
-bashCopy code
 .
 ├── frontend/         # Código-fonte do frontend desenvolvido com Next.js
 └── backend/          # Código-fonte do backend desenvolvido com .NET
