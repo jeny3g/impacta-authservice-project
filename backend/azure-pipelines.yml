@@ -1,0 +1,65 @@
+trigger:
+- main
+
+resources:
+- repo: self
+
+variables:
+  dockerRegistryServiceConnection: 'INexusAuthACR'
+  azureResourceManager: 'INexus-Auth Azure'
+  containerRegistry: 'inexusauthacr.azurecr.io'
+  repository: 'auth-service-repository'
+  tag: '$(Build.BuildId)'
+
+stages:
+- stage: Build
+  displayName: Build and Push stage
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - checkout: self
+    - task: Docker@2
+      displayName: Docker Login
+      inputs:
+        containerRegistry: $(dockerRegistryServiceConnection)
+        repository: $(repository)
+        command: 'login'
+    - task: Docker@2
+      displayName: Docker Build
+      inputs:
+        containerRegistry: $(dockerRegistryServiceConnection)
+        repository: $(repository)
+        command: 'build'
+        dockerfile: '**/Dockerfile'
+        tags: $(tag)
+        arguments: '--build-arg BUILDKIT_INLINE_CACHE=1 --cache-from=$(repository):latest'
+    - task: Docker@2
+      displayName: Docker Push
+      inputs:
+        containerRegistry: $(dockerRegistryServiceConnection)
+        repository: $(repository)
+        command: 'push'
+        tags: $(tag)
+
+- stage: Deploy
+  displayName: Deploy stage
+  jobs:
+  - job: Deploy
+    displayName: Deploy
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - task: AzureRmWebAppDeployment@4
+      inputs:
+        ConnectionType: 'AzureRM'
+        azureSubscription: '$(azureResourceManager)'
+        appType: 'webAppContainer'
+        WebAppName: 'auth-service-web-app'
+        DockerNamespace: '$(containerRegistry)'
+        DockerRepository: 'auth-service-repository'
+        DockerImageTag: '$(tag)'
+      # Setting continueOnError to false to stop the pipeline if this task fails
+      continueOnError: false

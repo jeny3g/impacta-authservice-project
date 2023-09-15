@@ -1,0 +1,15 @@
+﻿global using Mapster;
+global using MediatR;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.Logging;
+global using Auth.Service.Application.Models;
+global using Auth.Service.Application.Models.ViewModels;
+global using Auth.Service.Application.Services.Interfaces;
+global using Auth.Service.Application.Settings.FluentValidations;
+global using Auth.Service.Domain.Entities;
+global using Auth.Service.Domain.Entities.General;
+global using Auth.Service.Domain.Exceptions;
+global using Auth.Service.Domain.Resources;
+global using Auth.Service.Domain.Utils;
+global using Auth.Service.Persistence;
+global using FluentValidation;

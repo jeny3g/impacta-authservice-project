@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="Mapster" Version="7.3.0" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.32.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Auth.Service.Domain\Auth.Service.Domain.csproj" />
+    <ProjectReference Include="..\Auth.Service.Mail\Auth.Service.Mail.csproj" />
+    <ProjectReference Include="..\Auth.Service.Persistence\Auth.Service.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Users\" />
+    <None Remove="Users\Commands\" />
+    <None Remove="Users\Commands\Create\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Users\Commands\Create\" />
+  </ItemGroup>
+</Project>

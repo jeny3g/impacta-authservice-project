@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ENTITY_USER" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="EXCEPTION_AUTH" xml:space="preserve">
+    <value>Acesso não autorizado.</value>
+  </data>
+  <data name="EXCEPTION_FORBIDDEN" xml:space="preserve">
+    <value>Permissão não concedida.</value>
+  </data>
+  <data name="EXCEPTION_NOT_FOUND" xml:space="preserve">
+    <value>Entidade "{0}" ({1}) não foi encontrada.</value>
+  </data>
+  <data name="EXCEPTION_PERSISTENCE" xml:space="preserve">
+    <value>Ocorreu um ou mais erros ao persistir os dados.</value>
+  </data>
+  <data name="EXCEPTION_VALIDATION" xml:space="preserve">
+    <value>Ocorreu um ou mais erros de validação.</value>
+  </data>
+  <data name="VALIDATION_GREATER_THAN_VALUE" xml:space="preserve">
+    <value>Deve ser maior que {ComparisonValue}.</value>
+  </data>
+  <data name="VALIDATION_LESS_THAN_OR_EQUAL_VALUE" xml:space="preserve">
+    <value>Deve ser menor ou igual a {ComparisonValue}.</value>
+  </data>
+  <data name="VALIDATION_MAX_LENGTH" xml:space="preserve">
+    <value>Deve possuir até {MaxLength} caracteres.</value>
+  </data>
+  <data name="VALIDATION_MIN_LENGTH" xml:space="preserve">
+    <value>Deve possuir pelo menos {MinLength} caracteres.</value>
+  </data>
+  <data name="VALIDATION_MUST_BE_STRONG_PASSWORD" xml:space="preserve">
+    <value>Deve possuir senha forte.</value>
+  </data>
+  <data name="VALIDATION_MUST_ONLY_CONTAIN_LETTERS" xml:space="preserve">
+    <value>Deve possuir somente texto.</value>
+  </data>
+  <data name="VALIDATION_NOT_EMPTY" xml:space="preserve">
+    <value>Campo deve estar preenchido.</value>
+  </data>
+  <data name="VALIDATION_PASSWORD_MISMATCH" xml:space="preserve">
+    <value>As senhas não coincidem.</value>
+  </data>
+  <data name="VALIDATION_TOKEN_NOT_VALID" xml:space="preserve">
+    <value>Codigo incorreto ou expirado. </value>
+  </data>
+  <data name="VALIDATION_USER_EXISTS_BY_EMAIL" xml:space="preserve">
+    <value>Usuario existente para o EMAIL informado.</value>
+  </data>
+  <data name="VALIDATION_INVALID_EMAIL_FORMAT" xml:space="preserve">
+    <value>Deve ser um email valido.</value>
+  </data>
+  <data name="EXCEPTION_INVALID_EMAIL_OR_PASSWORD" xml:space="preserve">
+    <value>Usuario ou senha invalido.</value>
+  </data>
+  <data name="EXCEPTION_USER_NOT_ACTIVE" xml:space="preserve">
+    <value>Usuario nao esta ativo, confirme no email e tente novamente.</value>
+  </data>
+  <data name="EXCEPTION_IF_USER_EXISTS_SEND_EMAIL" xml:space="preserve">
+    <value>Se o e-mail estiver registrado, um link para redefinir a senha será enviado.</value>
+  </data>
+  <data name="EXCEPTION_USER_ALREADY_EXISTS" xml:space="preserve">
+    <value>User already exists</value>
+  </data>
+  <data name="VALIDATION_INVALID_PHONE_FORMAT" xml:space="preserve">
+    <value>Formato de número de telefone inválido. Deve conter apenas 11 dígitos</value>
+  </data>
+  <data name="VALIDATION_INVALID_ZIP_CODE_FORMAT" xml:space="preserve">
+    <value>Formato de cep inválido. Deve conter apenas 8 dígitos.</value>
+  </data>
+</root>
