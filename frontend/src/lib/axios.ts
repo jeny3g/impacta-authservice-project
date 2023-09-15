@@ -2,7 +2,7 @@ import axios from "axios";
 import jsCookie from "js-cookie";
 
 const api = axios.create({
-  baseURL: "https://auth-service-web-app.azurewebsites.net",
+  baseURL: "http://localhost:36160",
 });
 
 api.interceptors.request.use(
