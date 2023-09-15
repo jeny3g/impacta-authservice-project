@@ -1,0 +1,3 @@
+type ForgotPasswordCommand = {
+  email: string;
+};

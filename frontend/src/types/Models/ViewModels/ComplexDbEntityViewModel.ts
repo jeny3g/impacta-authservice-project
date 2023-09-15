@@ -1,0 +1,3 @@
+type ComplexDbEntityViewModel = {
+  id: string;
+};

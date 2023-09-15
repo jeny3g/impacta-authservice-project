@@ -1,0 +1,3 @@
+type GetUserQuery = {
+  id: string;
+};

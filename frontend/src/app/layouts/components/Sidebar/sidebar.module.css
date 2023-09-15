@@ -1,0 +1,8 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sidebar);
+  color: var(--text);
+  margin-top: -50px;
+}

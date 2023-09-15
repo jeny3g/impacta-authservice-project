@@ -1,0 +1,3 @@
+type VerifyUserCommand = {
+  token: string;
+};

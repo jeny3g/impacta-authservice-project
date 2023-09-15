@@ -1,0 +1,3 @@
+type AuthenticateSessionViewModel = {
+  token: string;
+};
