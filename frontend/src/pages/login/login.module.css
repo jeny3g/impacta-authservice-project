@@ -1,0 +1,119 @@
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-15%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slideInFromLeft 1s;
+  gap: 0.5em;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-bottom: 120px;
+  gap: 0.5em;
+  background-color: var(--primary);
+  width: 100%;
+  max-width: 700px;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/sign-in-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  flex: 1;
+  height: 100vh;
+}
+
+.title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  font-size: 2em;
+  color: var(--text);
+  margin-bottom: 0.5em;
+}
+
+.logoImg {
+  margin-bottom: 4em;
+  margin-top: 8em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.accountOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6em;
+  color: var(--text);
+  margin-top: 2em;
+  font-size: 0.8em;
+}
+
+.recoverPassword {
+  font-family: "Roboto Slab", serif;
+  color: var(--text);
+  font-weight: 400px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.recoverPassword:hover {
+  color: var(--text-hover);
+}
+
+.paragraph {
+  color: var(--link);
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+  cursor: pointer;
+}
+
+.paragraph:hover {
+  color: var(--link-hover);
+}
+
+.iconSignIn {
+  vertical-align: middle;
+  margin-right: 0.5em;
+  margin-bottom: 0.2em;
+}
