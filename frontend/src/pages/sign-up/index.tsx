@@ -1,4 +1,5 @@
 import {
+  ArrowLeft,
   EnvelopeSimple,
   LockSimple,
   User,
@@ -6,6 +7,7 @@ import {
 } from "@phosphor-icons/react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
@@ -97,12 +99,12 @@ export default function SignUp() {
                 />
               </div>
             </form>
-            {/* <Link href="/login">
+            <Link href="/login">
               <p className={styles.paragraph}>
                 <ArrowLeft className={styles.iconArrowLeft} size={18} /> Voltar
                 para login
               </p>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>
